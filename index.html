@@ -21,7 +21,10 @@
   <script>
   FastClick.attach(document.body);
   document.addEventListener("touchstart", function() {}, true);
-  $('#input-date').datepicker();
+  $('#input-date').datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
   </script>
 </body>
 </html>
