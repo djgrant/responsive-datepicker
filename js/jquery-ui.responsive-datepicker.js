@@ -20,6 +20,17 @@
     _datepicker.apply(this, [options]);
 
     $(datepickerId).hide();
+
+    if(isTouch) {
+      if(!!('FastClick' in window)) {
+        $(this).addClass('needsclick');
+      }
+      $(this)
+        .attr('readonly', 'readonly')
+        .on('touchend', function() {
+          $(this).datepicker('show');
+        });
+    }
   }
 
 })();
