@@ -120,3 +120,7 @@
 .ui-datepicker-title select {
   margin: 0 2px;
 }
+
+.ui-datepicker-buttonpane {
+    display: none;
+}
