@@ -13,15 +13,18 @@
 <body>
   <div class="wrapper">
     <h1>Responsive Datepicker</h1>
-    <input type="text" id="input-date">
+    <input type="text" class="input-date">
+    <input type="text" class="input-date">
+    <input type="text" class="input-text">
   </div>
   <script src="js/fastclick.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-ui-1.10.3.datepicker.js"></script>
+  <script src="js/jquery-ui.responsive-datepicker.js"></script>
   <script>
   FastClick.attach(document.body);
   document.addEventListener("touchstart", function() {}, true);
-  $('#input-date').datepicker({
+  $('.input-date').datepicker({
       changeMonth: true,
       changeYear: true
     });
