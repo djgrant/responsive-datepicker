@@ -53,6 +53,9 @@
   color: #666666;
   text-shadow: 1px 0px 0px #fff;
 }
+.ui-datepicker tbody {
+  border-bottom: 1px solid #bbb;
+}
 .ui-datepicker tbody td {
   padding: 0;
   border-right: 1px solid #bbb;
