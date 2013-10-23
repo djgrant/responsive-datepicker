@@ -87,7 +87,8 @@
   background: #f7f7f7;
 }
 
-.ui-datepicker-calendar .ui-state-active {
+.ui-datepicker-calendar .ui-state-active,
+.ui-datepicker-calendar .ui-state-default:active {
   position: absolute;
   left: -1px;
   right: -1px;
