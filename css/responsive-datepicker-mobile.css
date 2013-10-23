@@ -15,16 +15,16 @@
     background: white;
     transition: transform 0.3s ease, visbility 0 0.3s;
     -webkit-transition: -webkit-transform 0.3s ease, visibility 0 0.3s;
-    transform: translateY(100%);
-    -webkit-transform: translateY(100%);
+    transform: translateY(100%) translateZ(0);
+    -webkit-transform: translateY(100%) translateZ(0);
 }
 
 .ui-datepicker.is-open {
     visibility: visible;
     transition: transform 0.3s ease;
     -webkit-transition: -webkit-transform 0.3s ease;
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
+    transform: translateY(0) translateZ(0);
+    -webkit-transform: translateY(0) translateZ(0);
 }
 
 .ui-datepicker::before {
